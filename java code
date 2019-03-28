@@ -1,0 +1,116 @@
+package x;
+
+
+public interface pqr 
+{
+
+   
+    double x=10.5,y=20.6;
+}
+
+
+package x;
+
+
+public interface kpo 
+{
+    double z=15.5;
+    
+}
+
+
+package x;
+
+
+public interface abc  
+{
+   
+  double p=17.8;
+
+    
+ void sum();
+   
+}
+
+
+package y.k;
+
+
+public class xyz 
+{
+    int a,b,c;
+    xyz(int x,int y,int z)
+    {
+        a=x;
+        b=y;
+        c=z;
+         
+        if(x>y&&x>z)
+        {
+            System.out.println("the greatest number is:" + x);
+        }
+        else if(y>x&&y>z)
+        {
+             System.out.println("the greatest number is:" + y);
+        }
+        else
+        {
+             System.out.println("the greatest number is:" + z);
+        } 
+    
+    }
+}    
+    class two extends xyz
+    { 
+        
+    
+        int small;
+      two(int a,int b,int c)
+      { 
+         super(a,b,c);
+        
+          if(a<b&&a<c)
+        {
+            System.out.println("the greatest number is:" + a);
+        }
+        else if(b<a&&b<c)
+        {
+             System.out.println("the greatest number is:" + b);
+        }
+        else
+        {
+             System.out.println("the greatest number is:" + c);
+        } 
+         
+         
+      }
+    }
+    
+
+package t;
+import x.*;
+
+class mnp implements pqr,kpo,abc 
+{
+   y.k.xyz obj=new y.k.xyz;
+   
+    
+   public void sum()
+    {
+        double sum;
+        sum=x+y+z+p;
+        System.out.println("sum of ineter face=" + sum);
+    }
+   
+    
+}
+public class NewMain {
+
+   
+    public static void main(String[] args) 
+    {
+        
+       
+    }
+    
+}
